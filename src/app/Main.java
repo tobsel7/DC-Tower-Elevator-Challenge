@@ -3,8 +3,6 @@ package app;
 import building.Building;
 import building.BuildingFactory;
 
-import java.util.Arrays;
-
 /**
  * @author Tobias Haider
  * Main entry point for demonstration of the application
