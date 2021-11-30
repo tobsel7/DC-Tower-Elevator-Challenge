@@ -66,7 +66,7 @@ class Floor implements Comparable<Floor> {
         if (first.askToLeaveFloor(this)) {
             // Find all waiting persons wanting to go in the same direction as the first person
             List<Passenger> leavingPassengers = getPassengers(spotsLeft - 1, first.getDestinationFloor());
-            leavingPassengers.add(first);
+            leavingPassengers.add(0, first);
             return leavingPassengers;
         } else {
             // The first person does not want to leave the floor

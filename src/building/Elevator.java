@@ -176,7 +176,7 @@ class Elevator extends Thread {
             // Determine the next destination of the elevator
             passengersToAdd = currentFloor.getPassengers(spotsLeft);
             if (!passengersToAdd.isEmpty()) {
-                // Take the destination of the next passenger
+                // Take the destination of the first passenger
                 destinationFloor = passengersToAdd.get(0).getDestinationFloor();
             }
         } else {
